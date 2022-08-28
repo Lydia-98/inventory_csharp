@@ -38,5 +38,22 @@ namespace InventoryManagementSystem.Forms
         {
 
         }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+            string username = textBoxUsername.Text;
+            string password = textBoxPassword.Text;
+
+            int authenticatUser = User.AuthenticateUser(username, password);
+            if (authenticatUser == 1)
+            {
+                Form main = new MainWindow();
+                main.Show();
+            }
+            //this.Close();
+
+            //Form main = new MainWindow();
+            //main.Show();
+        }
     }
 }

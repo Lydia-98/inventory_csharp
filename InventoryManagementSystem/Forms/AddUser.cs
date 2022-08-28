@@ -32,7 +32,7 @@ namespace InventoryManagementSystem.Forms
             textBoxPassword2.Clear();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnSave_Click_1(object sender, EventArgs e)
         {
             // Get all data in the textboxes
             string username = textBoxUsername.Text;
@@ -61,5 +61,6 @@ namespace InventoryManagementSystem.Forms
             if (createUser == 1) this.Close();
 
         }
+
     }
 }

@@ -31,11 +31,6 @@ namespace InventoryManagementSystem
             childForm.Show();
         }
 
-        private void btnUsers_Click(object sender, EventArgs e)
-        {
-            lblTitle.Text = "Users";
-            openChildForm(new Forms.Users());
-        }
 
         private void btnCategories_Click(object sender, EventArgs e)
         {
@@ -43,11 +38,12 @@ namespace InventoryManagementSystem
             openChildForm(new Forms.Categories());
         }
 
-        private void btnProducts_Click(object sender, EventArgs e)
+        private void btnProducts_Click_1(object sender, EventArgs e)
         {
             lblTitle.Text = "Products";
             openChildForm(new Forms.Products());
         }
+
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
@@ -59,6 +55,12 @@ namespace InventoryManagementSystem
         {
             lblTitle.Text = "Sales";
             openChildForm(new Forms.Sales());
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            lblTitle.Text = "Users";
+            openChildForm(new Forms.Users());
         }
     }
 }

@@ -76,5 +76,10 @@ namespace InventoryManagementSystem.Forms
             // if successful, close form.
             if (updateUser == 1) this.Close();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -46,14 +46,6 @@ namespace InventoryManagementSystem.Forms
             this.UpdateDataGridView();
         }
 
-        private void addBtn_Click(object sender, EventArgs e)
-        {
-            var addProductForm = new ProductsAdd();
-            addProductForm.ShowDialog();
-
-            this.UpdateDataGridView();
-        }
-
         private void dgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var senderGrid = (DataGridView)sender;
@@ -107,6 +99,14 @@ namespace InventoryManagementSystem.Forms
 
                 }
             }
+        }
+
+        private void addBtn_Click_1(object sender, EventArgs e)
+        {
+            var addProductForm = new ProductsAdd();
+            addProductForm.ShowDialog();
+
+            this.UpdateDataGridView();
         }
     }
 }
